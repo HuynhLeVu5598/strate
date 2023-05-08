@@ -10,15 +10,15 @@ import talib.abstract as ta
 import freqtrade.vendor.qtpylib.indicators as qtpylib
 
 
-class Strategy001_custom_sell(IStrategy):
+class Strategy001_custom_exit(IStrategy):
 
     """
-    Strategy 001_custom_sell
+    Strategy 001_custom_exit
     author@: Gerald Lonlas, froggleston
     github@: https://github.com/freqtrade/freqtrade-strategies
 
     How to use it?
-    > python3 ./freqtrade/main.py -s Strategy001_custom_sell
+    > python3 ./freqtrade/main.py -s Strategy001_custom_exit
     """
 
     # Minimal ROI designed for the strategy.
@@ -123,7 +123,7 @@ class Strategy001_custom_sell(IStrategy):
             'sell'] = 1
         return dataframe
 
-    def custom_sell(self, pair: str, trade: 'Trade', current_time: 'datetime', current_rate: float, current_profit: float, **kwargs):
+    def custom_exit(self, pair: str, trade: 'Trade', current_time: 'datetime', current_rate: float, current_profit: float, **kwargs):
         """
         Sell only when matching some criteria other than those used to generate the sell signal
         :return: str sell_reason, if any, otherwise None

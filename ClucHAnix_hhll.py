@@ -192,7 +192,7 @@ class ClucHAnix_hhll(IStrategy):
 
         return True
 
-    def custom_sell(self, pair: str, trade: 'Trade', current_time: 'datetime', current_rate: float,
+    def custom_exit(self, pair: str, trade: 'Trade', current_time: 'datetime', current_rate: float,
                     current_profit: float, **kwargs):
 
         dataframe, _ = self.dp.get_analyzed_dataframe(pair, self.timeframe)
@@ -506,7 +506,7 @@ class ClucHAnix_hhll_TB(ClucHAnix_hhll):
     # This class is designed to inherit from yours and starts trailing buy with your buy signals
     # Trailing buy starts at any buy signal and will move to next candles if the trailing still active
     # Trailing buy stops  with BUY if : price decreases and rises again more than trailing_buy_offset
-    # Trailing buy stops with NO BUY : current price is > initial price * (1 +  trailing_buy_max) OR custom_sell tag
+    # Trailing buy stops with NO BUY : current price is > initial price * (1 +  trailing_buy_max) OR custom_exit tag
     # IT IS NOT COMPATIBLE WITH BACKTEST/HYPEROPT
     #
 

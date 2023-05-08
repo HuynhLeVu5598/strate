@@ -230,7 +230,7 @@ class CombinedBinHAndClucV8(IStrategy):
                     return 0.01
         return 0.99
 
-    def custom_sell(
+    def custom_exit(
         self,
         pair: str,
         trade: "Trade",

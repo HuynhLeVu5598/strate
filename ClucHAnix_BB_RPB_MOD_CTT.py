@@ -520,7 +520,7 @@ class TrailingBuyStrat2(ClucHAnix_BB_RPB_MOD_CTT):
     # This class is designed to inherit from yours and starts trailing buy with your buy signals
     # Trailing buy starts at any buy signal and will move to next candles if the trailing still active
     # Trailing buy stops  with BUY if : price decreases and rises again more than trailing_buy_offset
-    # Trailing buy stops with NO BUY : current price is > initial price * (1 +  trailing_buy_max) OR custom_sell tag
+    # Trailing buy stops with NO BUY : current price is > initial price * (1 +  trailing_buy_max) OR custom_exit tag
     # IT IS NOT COMPATIBLE WITH BACKTEST/HYPEROPT
     #
 

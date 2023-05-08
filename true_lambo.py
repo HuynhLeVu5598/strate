@@ -370,7 +370,7 @@ class true_lambo(IStrategy):
 
         return stoploss_from_open(sl_profit, current_profit)
 
-    def custom_sell(self, pair: str, trade: 'Trade', current_time: 'datetime', current_rate: float,
+    def custom_exit(self, pair: str, trade: 'Trade', current_time: 'datetime', current_rate: float,
                     current_profit: float, **kwargs):
 
         dataframe, _ = self.dp.get_analyzed_dataframe(pair, self.timeframe)

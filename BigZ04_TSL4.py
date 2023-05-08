@@ -209,7 +209,7 @@ class BigZ04_TSL4(IStrategy):
         return True
 
 
-    def custom_sell(self, pair: str, trade: 'Trade', current_time: 'datetime', current_rate: float,
+    def custom_exit(self, pair: str, trade: 'Trade', current_time: 'datetime', current_rate: float,
                     current_profit: float, **kwargs):
         return False
 

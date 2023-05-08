@@ -123,7 +123,7 @@ class MultiMA_TSL(IStrategy):
 
         return 0.99
 
-    def custom_sell(self, pair: str, trade: 'Trade', current_time: 'datetime', current_rate: float,
+    def custom_exit(self, pair: str, trade: 'Trade', current_time: 'datetime', current_rate: float,
                     current_profit: float, **kwargs):
         
         # Make sure the robot don't close the trade before 3 mins passed
