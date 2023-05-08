@@ -39,9 +39,9 @@ class TDSequentialStrategy(IStrategy):
     timeframe = '5m'
 
     # These values can be overridden in the "ask_strategy" section in the config.
-    use_sell_signal = True
-    sell_profit_only = False
-    ignore_roi_if_buy_signal = False
+    use_exit_signal = True
+    exit_profit_only = False
+    ignore_roi_if_entry_signal = False
 
     # Optional order type mapping
     order_types = {

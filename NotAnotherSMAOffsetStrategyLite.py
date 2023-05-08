@@ -50,10 +50,10 @@ class NotAnotherSMAOffsetStrategyLite(IStrategy):
     fast_ewo = 50
     slow_ewo = 200
 
-    use_sell_signal = True
-    sell_profit_only = False
+    use_exit_signal = True
+    exit_profit_only = False
     sell_profit_offset = 0.01
-    ignore_roi_if_buy_signal = False
+    ignore_roi_if_entry_signal = False
     order_time_in_force = {'buy': 'gtc', 'sell': 'ioc'}
     timeframe = '5m'
     process_only_new_candles = True

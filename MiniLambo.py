@@ -163,9 +163,9 @@ class MiniLambo(IStrategy):
     timeframe_info_4h = '4h'
     timeframe_info_1d = '1d'
 
-    use_sell_signal = False
-    sell_profit_only = False
-    ignore_roi_if_buy_signal = False
+    use_exit_signal = False
+    exit_profit_only = False
+    ignore_roi_if_entry_signal = False
     use_custom_stoploss = True
     process_only_new_candles = True
     startup_candle_count = 200

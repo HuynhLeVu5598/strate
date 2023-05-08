@@ -209,7 +209,7 @@ class true_lambo(IStrategy):
 
     # Custom stoploss
     use_custom_stoploss = True
-    use_sell_signal = True
+    use_exit_signal = True
     startup_candle_count: int = 400
 
     ############################################################################

@@ -265,7 +265,7 @@ class BBMod1(IStrategy):
 
     # Custom stoploss
     use_custom_stoploss = True
-    use_sell_signal = True
+    use_exit_signal = True
 
     lower_trailing_list = ["vwap", "clucHA", "clucHA2", "nfi_38", "nfi7_33", "nfi7_37", "cofi"]
 

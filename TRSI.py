@@ -49,10 +49,10 @@ class TRSI(IStrategy):
     timeframe = '5m'
     
     # Experimental settings (configuration will overide these if set)
-    use_sell_signal = True
-    sell_profit_only = False
+    use_exit_signal = True
+    exit_profit_only = False
     sell_profit_offset = 0.0
-    ignore_roi_if_buy_signal = False
+    ignore_roi_if_entry_signal = False
     
     # Optional order type mapping
     order_types = {

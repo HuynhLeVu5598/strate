@@ -74,8 +74,8 @@ class SMAOffsetOptV1(IStrategy):
 	# Optimal timeframe for the strategy
 	timeframe = '5m'
 
-	use_sell_signal = True
-	sell_profit_only = False
+	use_exit_signal = True
+	exit_profit_only = False
 
 	process_only_new_candles = True
 	startup_candle_count = 50

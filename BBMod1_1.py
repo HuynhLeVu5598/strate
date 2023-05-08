@@ -125,7 +125,7 @@ def top_percent_change(dataframe: DataFrame, length: int) -> float:
         return (dataframe['open'].rolling(length).max() - dataframe['close']) / dataframe['close']
 
 
-class BBMod1(IStrategy):
+class BBMod1_1(IStrategy):
     """
         BBMod1 modified from BB_RPB_TSL ( https://github.com/jilv220/BB_RPB_TSL )
         @author jilv220
@@ -269,7 +269,7 @@ class BBMod1(IStrategy):
 
     # Custom stoploss
     use_custom_stoploss = True
-    use_sell_signal = True
+    use_exit_signal = True
 
     ############################################################################
 

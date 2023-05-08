@@ -56,9 +56,9 @@ class TemaMaster(IStrategy):
     ta_on_candle = False
 
     # Experimental settings (configuration will overide these if set)
-    use_sell_signal = True
-    sell_profit_only = False
-    ignore_roi_if_buy_signal = False
+    use_exit_signal = True
+    exit_profit_only = False
+    ignore_roi_if_entry_signal = False
 
 
     def informative_pairs(self):

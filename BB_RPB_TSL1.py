@@ -102,7 +102,7 @@ def chaikin_money_flow(dataframe, n=20, fillna=False) -> Series:
         cmf = cmf.replace([np.inf, -np.inf], np.nan).fillna(0)
     return Series(cmf, name='cmf')
 
-class BB_RPB_TSL(IStrategy):
+class BB_RPB_TSL1(IStrategy):
     '''
         BB_RPB_TSL
         @author jilv220
@@ -232,7 +232,7 @@ class BB_RPB_TSL(IStrategy):
 
     # Custom stoploss
     use_custom_stoploss = True
-    use_sell_signal = True
+    use_exit_signal = True
 
     ############################################################################
 

@@ -134,7 +134,7 @@ class BB_RPB_TSL(IStrategy):
 
     # Custom stoploss
     use_custom_stoploss = True
-    use_sell_signal = True
+    use_exit_signal = True
 
     ############################################################################
 

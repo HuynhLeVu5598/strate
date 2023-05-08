@@ -116,8 +116,8 @@ class Obelisk_TradePro_Ichi_v2_2(IStrategy):
     #
     # Stoploss:
     stoploss = -0.99
-    use_sell_signal = True
-    sell_profit_only = True
+    use_exit_signal = True
+    exit_profit_only = True
 
     plot_config = {
         # Main plot indicators (Moving averages, ...)

@@ -22,8 +22,8 @@ class SMAOffsetV2(IStrategy):
     stoploss = -0.20
     timeframe = '5m'
     informative_timeframe = '1h'
-    use_sell_signal = True
-    sell_profit_only = False
+    use_exit_signal = True
+    exit_profit_only = False
     process_only_new_candles = True
 
     use_custom_stoploss = True

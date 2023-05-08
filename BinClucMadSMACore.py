@@ -32,10 +32,10 @@ class CoreStrategy(IStrategy):
     informative_timeframe = "1h"
 
     # Sell signal
-    use_sell_signal = True
-    sell_profit_only = False
+    use_exit_signal = True
+    exit_profit_only = False
     sell_profit_offset = 0.001
-    ignore_roi_if_buy_signal = True
+    ignore_roi_if_entry_signal = True
 
     # Trailing stoploss
     trailing_stop = True

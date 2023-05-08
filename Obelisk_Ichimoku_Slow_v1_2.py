@@ -104,8 +104,8 @@ class Obelisk_Ichimoku_Slow_v1_2(IStrategy):
     # Stoploss:
     stoploss = -0.99
 
-    use_sell_signal = True
-    sell_profit_only = True
+    use_exit_signal = True
+    exit_profit_only = True
     sell_profit_offset = 0.01
 
     def informative_pairs(self):

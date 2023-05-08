@@ -22,9 +22,9 @@ class Momentumv2(IStrategy):
     use_custom_stoploss = True
     trailing_stop = False
     timeframe = '4h'
-    use_sell_signal = True
-    sell_profit_only = False
-    ignore_roi_if_buy_signal = False
+    use_exit_signal = True
+    exit_profit_only = False
+    ignore_roi_if_entry_signal = False
     startup_candle_count: int = 100
     order_types = {
         'buy': 'limit',
